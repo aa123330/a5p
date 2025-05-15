@@ -89,7 +89,7 @@ jobs:
           
           # 应用补丁
           cd kernel_platform/common/
-          patch -N -p1 -l --force < dtbo_check.patch
+          patch -N -p1 -l --force < boot.patch
 
       - name: Set up susfs
         run: |
