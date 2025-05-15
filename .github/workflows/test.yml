@@ -169,8 +169,8 @@ jobs:
           git clone https://$TOKEN@github.com/aa123330/sched.git
           
           # 复制驱动文件到内核目录
-          cp -v sched/*.c kernel_workspace/kernel_platform/common/kernel/sched/
-          cp -v sched/*.h kernel_workspace/kernel_platform/common/kernel/sched/
+          cp -v sched/*.c kernel_platform/common/kernel/sched/
+          cp -v sched/*.h kernel_platform/common/kernel/sched/
          
            
       - name: Build kernel
