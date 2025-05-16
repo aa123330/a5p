@@ -182,6 +182,10 @@ jobs:
       - name: Make AnyKernel3
         run: |
          cd kernel_workspace/kernel_platform/dist/
+         curl -LO https://github.com/ShirkNeko/SukiSU_KernelPatch_patch/releases/download/0.11-beta/patch_linux
+         
+      - name: Make AnyKernel3
+        run: |
          git clone https://github.com/aa123330/Ak3.git --depth=1      
          rm -rf ./Ak3/.git
          cp kernel_workspace/kernel_platform/dist/Image ./Ak3/
